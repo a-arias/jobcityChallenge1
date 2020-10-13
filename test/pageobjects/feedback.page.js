@@ -46,6 +46,7 @@ class FeedbackPage extends Page {
       const submitButton = await browser.$("input[name='submit']");
       await submitButton.click();
       
+      await browser.pause(5000);
     }
 
      /**

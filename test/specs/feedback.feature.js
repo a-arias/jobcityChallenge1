@@ -11,22 +11,23 @@ describe('Pixel Perfect Testing on feedback feature', async function(){
       await FeedBackPage.clickSubmitButton();
 
       //taking snapshot and comparing it on percy backend
-      await percySnapshot(browser, "Inpunt Name Validation screenshot",{ widths: [1200, 1400, 1800] });
+      await percySnapshot(browser, "Name Validation screenshot",{ widths: [1200, 1400, 1800] });
     });
 
-    it('should be able to validate email validation message using pixel perfect test',  async function(){
+    it('should be able to validate Email validation message using pixel perfect test',  async function(){
      //Filling email input and clicking submit button to trigger email validation message
-      await FeedBackPage.fillEmailInput('abraham');
-      await FeedBackPage.clickSubmitButton();
+     await FeedBackPage.fillYourNameInput('abraham');
+     await FeedBackPage.clickSubmitButton();
 
       //taking snapshot and comparing it on percy backend
       await percySnapshot(browser, "Email Validation screenshot",{ widths: [1200, 1400, 1800] });
     });
 
-    it('should be able to validate subject validation message using pixel perfect test',  async function(){
+    it('should be able to validate Subject validation message using pixel perfect test',  async function(){
       //Filling name,email inputs and clicking submit button to trigger subject validation message
       await FeedBackPage.fillYourNameInput('abraham');
-      await FeedBackPage.fillEmailInput('abraham');
+      await FeedBackPage.fillEmailInput('abraham@example.com');
+
       await FeedBackPage.clickSubmitButton();
 
       //taking snapshot and comparing it on percy backend
@@ -53,6 +54,6 @@ describe('Pixel Perfect Testing on feedback feature', async function(){
       await FeedBackPage.clickSubmitButton();
 
       //taking snapshot and comparing it on percy backend
-      await percySnapshot(browser, "screenshot",{ widths: [1200, 1400, 1800] });
+      await percySnapshot(browser, "Successfuly sent feedback creenshot",{ widths: [1200, 1400, 1800] });
     });
 });
