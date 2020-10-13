@@ -18,30 +18,6 @@ describe('Navigation feature',  function(){
       expect(OnlineBankingHeader).toBeExisting();
     });
 
-    it('should be able to navigate to feedback page and validate input information', function(){
-      //Opening the landing page.
-      LandingPage.open();
-
-      //Navigating to feedback page
-      LandingPage.clickFeedbackButton();
-
-      //Asserts all feedback inputs are present on the page
-      const elem1 = FeedbackPage.emailInput;
-      const elem2 = FeedbackPage.yourNameInput;
-      const elem3 = FeedbackPage.subjectInput;
-      const elem4 = FeedbackPage.commentInput;
-      const elem5 = FeedbackPage.submitButton;
-      const elem6 = FeedbackPage.resetButton;
-
-      expect(elem1).toBeExisting();
-      expect(elem2).toBeExisting();
-      expect(elem3).toBeExisting();
-      expect(elem4).toBeExisting();
-      expect(elem5).toBeExisting();
-      expect(elem6).toBeExisting();
-
-    });
-
     it('should be able to go to online banking page using more services button in home page', function(){
       //Opening the landing page.
       LandingPage.open();

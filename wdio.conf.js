@@ -19,9 +19,8 @@ exports.config = {
     specs: [
         //'./test/specs/**/*.js',
         './test/specs/feedback.feature.js',
-        //'./test/specs/home.feature.js',
-        //'./test/specs/pixelPerfect.feature.js',
-        //'./test/specs/navigation.feature.js',
+        './test/specs/pixelPerfect.feature.js',
+        './test/specs/navigation.feature.js',
     ],
     // Patterns to exclude.
     exclude: [
