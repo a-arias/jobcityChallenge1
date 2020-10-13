@@ -1,5 +1,6 @@
 const LandingPage = require('../pageobjects/landing.page');
 const OnlineBankingPage = require('../pageobjects/onlineBanking.page');
+const FeedbackPage = require('../pageobjects/feedback.page');
 
 describe('Navigation feature',  async function(){
   it('should be able to test pixel perfect on landing page', async function(){
@@ -20,7 +21,7 @@ describe('Navigation feature',  async function(){
 
   it('should be able to test pixel perfect on Feedback page', async function(){
     //Opening the landing page.
-    OnlineBankingPage.open();
+    FeedbackPage.open();
 
     //Taking Snapshot using percy to validate pixel perfect page on Percy backed.
     await percySnapshot(browser, "Feedback page screenshot",{ widths: [1200, 1400, 1800] });

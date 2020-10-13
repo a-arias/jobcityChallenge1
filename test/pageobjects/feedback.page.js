@@ -5,52 +5,51 @@ const Page = require('./page');
  */
 class FeedbackPage extends Page {
     /**
-     * Define selectors using getter methods
+     * Fills your name input
      */
-    get yourNameInput () { return $('#name') }
-    get emailInput () { return $('#email') }
-    get subjectInput () { return $('#subject') }
-    get commentInput () { return $('#comment') }
-    get submitButton () { return $("input[name='submit']") }
-    get resetButton () { return $("input[name='clear']") }
+    async fillYourNameInput (value) {
+      // this.submitButton.click(); 
+      const yourNameInput = await browser.$('#name');
+      await yourNameInput.setValue(value);
 
-    /**
-     * 
-     */
-    clickYourNameInput (value) {
-      this.yourNameInput.setValue(value);
+      // this.yourNameInput.setValue(value);
     }
 
      /**
-     * 
+     * Fills email input
      */
-    clickEmailInput () {
-      this.emailInput.setValue(value);
+    async fillEmailInput (value) {
+      const emailInput = await browser.$('#email');
+      await emailInput.setValue(value);
     }
 
      /**
-     * 
+     * Fills subject input
      */
-    clickSubjectInput () {
-      this.subjectInput.setValue(value); 
+    async fillSubjectInput (value) {
+      const subjectInput = await browser.$('#subject');
+      await subjectInput.setValue(value);
     }
 
      /**
-     * 
+     * Fills comment input
      */
-    clickCommentInput () {
-      this.commentInput.setValue(value);
+    async fillCommentInput (value) {
+      const commentInput = await browser.$('#comment');
+      await commentInput.setValue(value);
     }
 
      /**
-     * 
+     * Fills submit button
      */
-    clickSubmitButton () {
-      this.submitButton.click(); 
+    async clickSubmitButton () {
+      const submitButton = await browser.$("input[name='submit']");
+      await submitButton.click();
+      
     }
 
      /**
-     * 
+     * Clicks clear button
      */
     clickResetButton () {
       this.resetButton.click(); 

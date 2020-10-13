@@ -1,14 +1,10 @@
 {
-  "name": "jobcityChallenge1",
+  "name": "jobCityChallenge1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/a-arias/jobcityChallenge1.git"
   },
   "keywords": [],
   "author": "",
@@ -19,11 +15,12 @@
   "homepage": "https://github.com/a-arias/jobcityChallenge1#readme",
   "devDependencies": {
     "@percy/webdriverio": "^1.0.4",
-    "@wdio/cli": "^6.6.3",
-    "@wdio/local-runner": "^6.6.3",
-    "@wdio/mocha-framework": "^6.6.3",
-    "@wdio/spec-reporter": "^6.6.3",
+    "@wdio/cli": "^6.6.2",
+    "@wdio/local-runner": "^6.6.2",
+    "@wdio/mocha-framework": "^6.6.0",
+    "@wdio/spec-reporter": "^6.6.0",
     "@wdio/sync": "^6.6.0",
+    "chai": "^4.2.0",
     "chromedriver": "^86.0.0",
     "wdio-chromedriver-service": "^6.0.4"
   }

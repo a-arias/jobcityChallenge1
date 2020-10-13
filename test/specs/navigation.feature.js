@@ -1,6 +1,6 @@
 const LandingPage = require('../pageobjects/landing.page');
 const OnlineBankingPage = require('../pageobjects/onlineBanking.page');
-const FeedbackPage = require('../pageobjects/feedback.page');
+const FeedbackPage = require('../pageobjects/feedBack.page');
 
 describe('Navigation feature',  function(){
     it('should be able to redirect user to login page when clicking on online banking options without being logged', function(){
