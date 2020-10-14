@@ -12,6 +12,9 @@ install node and NPM on mac,
 `npm install`
 
 ## Run the tests
-This command is going to execute all the tests.
+set up the percy token to perfom visual regression testing.
+`export PERCY_TOKEN=784b3eec92992be539d8aacca794064ae811fe228859f0631adfd951f132b206`
+
+This command is going to execute all of the tests.
 `percy exec -- ./node_modules/.bin/wdio wdio.conf.js`
 
